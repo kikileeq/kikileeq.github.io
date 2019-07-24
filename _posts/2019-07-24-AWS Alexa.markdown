@@ -48,7 +48,8 @@ aws configure --profile ${your_profile_name}
 ### 3.2 一键部署本demo
 
 ```sh
-wget --no-check-certificate https://raw.githubusercontent.com/finishy1995/voixa/master/install.sh && chmod u+x install.sh && ./install.sh
+wget --no-check-certificate https://raw.githubusercontent.com/finishy1995/voixa/master/install.sh \
+&& chmod u+x install.sh && ./install.sh
 ```
 ### 3.3 配置 Alexa
 
