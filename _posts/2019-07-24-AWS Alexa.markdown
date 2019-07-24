@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Amazon Alexa Demo"
+toc: true
+---
+
+
+## 1.Introduction 
+这是一个Amazon Alexa的示例项目。在本示例项目中，考虑到资讯爆炸的情况，我们想要利用Alexa自动播报真正感兴趣的话题。利用Serverless无服务器架构，实现了订阅指定网站的指定关键词（例：网站 AWS，关键词 大数据），利用Alexa自动播报相关资讯的简讯。  
+本演示仅用于试验和参考用途，如果您想在云端开发自己的应用，请登录AWS官网查看详细信息。
+## 2.Architecture of this Demo 
+Serverless 数据采集架构：  
+<a data-fancybox="gallery" href="https://aws-demo-center.s3-ap-southeast-1.amazonaws.com/demopic/Data_Collect.jpeg">
+![数据采集架构](https://aws-demo-center.s3-ap-southeast-1.amazonaws.com/demopic/Data_Collect.jpeg)
+</a>
+Alex 新闻播报架构：  
+<a data-fancybox="gallery" href="https://aws-demo-center.s3-ap-southeast-1.amazonaws.com/demopic/Alexa_Skill.jpeg">
+![新闻播报架构](https://aws-demo-center.s3-ap-southeast-1.amazonaws.com/demopic/Alexa_Skill.jpeg)
+</a>
+
+## 3.How to use the demo
+
+### 3.1 准备工作
+#### （1）前提条件
+
+您需要具有 AWS 全球区账号，并具备 Admin 权限 （事实上并不需要这么大的权限，后续会降低权限要求）。  
+
+#### （2）安装 aws-cli
+
+如果您已经安装好了 aws-cli，可以跳过此步骤
+
+```sh
+sudo pip install awscli
+```
+
+更多的安装方法，请参考 [aws-cli链接](https://github.com/aws/aws-cli)
+
+#### （3）配置 aws-cli
+
+如果您已经配置好了 aws-cli，可以跳过此步骤
+
+```sh
+aws configure --profile ${your_profile_name}
+```
+
+配置遇到了问题？请参考 [aws-cli链接](https://github.com/aws/aws-cli)
+
+### 3.2 一键部署本demo
+
+```sh
+wget --no-check-certificate https://raw.githubusercontent.com/finishy1995/voixa/master/install.sh && chmod u+x install.sh && ./install.sh
+```
+### 3.3 配置 Alexa
+
+在 [Amazon Developer 网站](https://developer.amazon.com/) 上配置自己的 Alexa Skill,您可以参考如下配置信息 
+
+
+

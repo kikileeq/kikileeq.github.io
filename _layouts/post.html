@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<section id="body">
+    <div class="padding highlightable">
+	  <div id="top-bar-sticky-wrapper" class="sticky-wrapper">
+	  <div id="top-bar">
+            <div id="top-github-link">
+                <a class="github-link" title='Edit this page' href="https://github.com/AwsDemoCenter/AwsDemoCenter.github.io" target="blank">
+                  <i class="fas fa-code-branch"></i>
+                  <span id="top-github-link-text">Edit this page</span>
+                </a>
+            </div>
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"> 
+		<span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="" class="highlight">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                </span>
+                <span class="links"><a href="{{site.baseurl}}/index.html">AWS Demo Center</a>> 
+				{{ page.title }}
+                </span>
+            </div>
+                
+            <div class="progress">
+                <div class="wrapper"> {{ site.baseurl }}</div>
+            </div>
+          </div>
+                
+      </div>
+  
+      <div id="chapter">
+          <div id="body-inner">
+			{{ content }}
+			
+		  </div>
+      </div>
+	  
+	  <!-- <div id="navigation"> -->
+			<!-- <a class="nav nav-prev" href="page.previous" title="previous"> <i class="fas fa-chevron-left"></i></a>         -->
+            <!-- <a class="nav nav-next" href="{{page.next}}" title="next" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>         -->
+      <!-- </div> -->
+	  <!-- 回到顶部 -->
+	  <a class="btn btn-default" href="#" role="button" style="position:fixed;right:0;bottom:0"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+	</div>
+</section>
