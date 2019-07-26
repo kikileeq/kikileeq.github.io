@@ -25,7 +25,7 @@ $ aws cognito-identity create-identity-pool --identity-pool-name MyIdentityPool 
 #list identity pool，and copy your identity-pool-id
 $ aws cognito-identity list-identity-pools --max-results 20
 ```
-配置Cognito用户池所对应的已授权IAM角色具有至少S3项目存储桶全部操作权限，以及Amazon Rekognition全部操作权限
+配置Cognito用户池所对应的未授权IAM角色具有至少Amazon Rekognition只读操作权限（可以使用已存在的IAM Role），并将该其设置为身份池角色
 ```
 #set-identity-pool-roles
 $ aws cognito-identity set-identity-pool-roles --identity-pool-id "YOUR_POOL_ID" \
@@ -81,7 +81,7 @@ $ {
          "Effect": "Allow",
          "Principal": "*",
          "Action": "s3:GetObject",
-         "Resource": "arn:aws:s3:::kikirekognitiondemo/*"
+         "Resource": "arn:aws:s3:::amazon-rekognition-demo/*"
       }
   ]
 }
