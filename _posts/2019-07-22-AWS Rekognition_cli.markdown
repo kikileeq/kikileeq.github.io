@@ -109,10 +109,10 @@ $ {
 #configure CORS 
 $ aws s3api put-bucket-cors --bucket amazon-rekognition-demo --cors-configuration file://cors.json
 ```  
+至此，可以点击s3静态托管网站的url,体验rekognition的图像识别功能。若要使用rekognition的面部识别功能，还需要执行以下步骤。
+## 4.Face Recognition
 
-## 4.Create Collection
-
-面部识别功能的正常使用前需要先创建Collection 
+在面部识别功能的正常使用之前，需要先创建人脸集合，将人脸存储在该集合中。然后该功能会向您提供搜索集合中与要识别的图像匹配度最高的人脸。 
 
   
 参考：[create-collection](https://docs.aws.amazon.com/zh_cn/rekognition/latest/dg/create-collection-procedure.html)    
