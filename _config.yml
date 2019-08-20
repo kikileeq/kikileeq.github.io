@@ -41,10 +41,11 @@ plugins:
 #   - vendor/ruby/
 
 #comment评论功能
-gitalk: true
-gitalk_clientID: '72ac2364b049de8ff876'
-gitalk_Secret: '521bbdccf38355596f7572e0eaa17905476f2a7d'
-gitalk_repo: 'kikileeq.github.io'
-gitalk_owner: 'kikileeq'
-gitalk_admin: 'kikileeq'
-distractionFreeMode: true
+comments:
+  gitalk: true
+  gitalk_clientID: '72ac2364b049de8ff876'
+  gitalk_Secret: '521bbdccf38355596f7572e0eaa17905476f2a7d'
+  gitalk_repo: 'kikileeq.github.io'
+  gitalk_owner: 'kikileeq'
+  gitalk_admin: 'kikileeq'
+  distractionFreeMode: true
